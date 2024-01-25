@@ -2,28 +2,23 @@ const GooglePlaces = require('google-places-api');
 require('dotenv').config();
 
 const apiKey = process.env.API_KEY;
-const location = 'Accra, Ghana';
+const location = '5.6037,-0.1870';
 
 const googlePlaces = new GooglePlaces(apiKey);
 
-const currentTime = new Date().getHours();
+// console.log('API Key:', apiKey);
 
-let type = 'establishment';
-
-if (currentTime >= 11 && currentTime <= 14) {
-  type = 'restaurant';
-} else if (currentTime >= 19) {
-  type = 'bar';
-}
+// const cuisineType = 'italian';
 
 googlePlaces.nearbySearch({
-  location: location,
-  radius: 5000,
-  type: type
+    location: location,
+    radius: 10,
+    types: 'restaurant',
 })
 .then(results => {
-  console.log(results);
+    console.log('API Response:', results);
+    console.log('Establishments:', results);
 })
 .catch(error => {
-  console.error(error);
+    console.error('Error:', error);
 });
