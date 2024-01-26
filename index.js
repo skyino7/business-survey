@@ -14,7 +14,7 @@ googlePlaces.nearbySearch({
   .then(response => {
     console.log('Full API Response:', response);
 
-    const results = response.data && response.data.results ? response.data.results : [];
+    // const results = response.data && response.data.results ? response.data.results : [];
 
     console.log('API Response:', results.length, 'results');
 
