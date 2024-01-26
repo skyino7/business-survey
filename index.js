@@ -33,8 +33,8 @@ googlePlaces.nearbySearch({
   })
   .catch(error => {
     console.error('Error:', error.message || error);
-    if (error.response) {
-      console.error('Response Status:', error.response.status);
-      console.error('Response Data:', error.response.data);
-    }
+    // if (error.response) {
+    //   console.error('Response Status:', error.response.status);
+    //   console.error('Response Data:', error.response.data);
+    // }
   });
