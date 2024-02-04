@@ -16,3 +16,24 @@
 - Understand customer behavior
 - Better decision-making
 - helps with competitor analysis
+
+# TECHNOLOGIES
+
+## FRONTEND
+- REACT
+- TAILWIND
+- CSS
+
+## BACKEND
+- JAVASCRIPT
+- NODEJS
+- MONGODB
+
+## TOOLS
+- VSCODE
+- WEBSTORM
+- FIGMA
+
+# TIMELINE
+- FRONTEND - 3 WEEKS
+- BACKEND - 8 WEEKS
